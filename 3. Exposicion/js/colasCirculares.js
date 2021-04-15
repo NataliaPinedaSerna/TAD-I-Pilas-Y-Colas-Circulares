@@ -103,21 +103,28 @@ class Queue {
 }
 
 let theQueue = new Queue(5);
-theQueue.addElement("A");
-theQueue.addElement("B");
-theQueue.addElement("C");
-theQueue.addElement("D");
-theQueue.addElement("E");
-theQueue.removeElement();
-theQueue.removeElement();
-theQueue.removeElement();
-theQueue.removeElement();
-theQueue.addElement("F");
-theQueue.addElement("G");
 
+let theQueue = new Queue(5);
 
 function example3(){
-    console.log(theQueue);
+
+    theQueue.addElement("A");
+    theQueue.addElement("B");
+    theQueue.addElement("C");
+    theQueue.addElement("D");
+    theQueue.addElement("E");
     console.log(theQueue.printQueue());
+
+    theQueue.removeElement();
+    theQueue.removeElement();
+    theQueue.removeElement();
+    theQueue.removeElement();
+    console.log(theQueue.printQueue());
+    console.log(theQueue);
+
+    theQueue.addElement("F");
+    theQueue.addElement("G");
+    console.log(theQueue.printQueue());
+
     console.log(theQueue.sizeQueue());
 }
